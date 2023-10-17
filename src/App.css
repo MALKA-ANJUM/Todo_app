@@ -79,10 +79,16 @@
   opacity: 0.6;
 }
 .list{
-  width: 220px;
+  max-width: 220px;
+  width: 100%;
   background-color: #12343b;
   border: none;
   color: #ccc;
+  font-size: 20px;
+  padding-left: 10px;
+  margin-left: 15px;
+}
+.list-id{
   font-size: 20px;
   padding-left: 10px;
   margin-left: 15px;
@@ -95,7 +101,7 @@ button:focus{
   margin: 1em 0;
   height: 50vh;
   overflow-x: hidden;
-  
+  width: 100%;
 }
 .todo-list .btn{
   display: flex;

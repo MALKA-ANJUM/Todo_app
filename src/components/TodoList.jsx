@@ -48,6 +48,7 @@ const TodoList = ({
       </div>
       {filteredTodos.map((todo) => (
         <li className="list-item" key={todo.id}>
+          <p className={`list-id ${todo.completed ? "complete" : ""}`}>{todo.id}</p>
           <input
             type="text"
             value={todo.title}
