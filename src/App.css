@@ -1,0 +1,122 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  background-color: linear-gradient(to right bottom, #e1b382, #c89cc6);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app-wrapper{
+  background-color: #12343b;
+  min-width: 450px;
+  min-height: 650px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 3px 6px 40px #000;
+  margin-bottom: 10px;
+}
+.header h1{
+  color: #fff;
+  text-align: center;
+  margin: 20px 0;
+}
+.task-input{
+  outline: none;
+  width: 260px;
+  padding: 15px;
+  margin-right: 25px;
+  font-size: 20px;
+  color: #ccc;
+  background-color: #000000;
+  border: 1px solid #c89666;
+}
+.button-add{
+  width: 70px;
+  padding: 15px 15px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 0;
+  background-color: #f1af71;
+  cursor: pointer;
+}
+.list-item{
+  display: flex;
+  border: 1px solid #fff;
+  margin: 20px 0;
+  border-radius: 10px;
+  max-height: 30px;
+}
+.button-complete, 
+.button-delete,
+.button-edit{
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 28px;
+  border-radius: 50%;
+}
+.button-complete{
+  color: #ff6c6c;
+  margin-right: 10px;
+}
+.button-edit{
+  color: #e2d029;
+  margin-right: 10px;
+}
+.button-delete{
+  color: lightseagreen;
+}
+.complete{
+  text-decoration-style: solid;
+  text-decoration-line: line-through;
+  text-decoration-color: #ff6c6c;
+  opacity: 0.6;
+}
+.list{
+  width: 220px;
+  background-color: #12343b;
+  border: none;
+  color: #ccc;
+  font-size: 20px;
+  padding-left: 10px;
+  margin-left: 15px;
+}
+.input:focus,
+button:focus{
+  outline: none;
+}
+.todo-list{
+  margin: 1em 0;
+  height: 50vh;
+  overflow-x: hidden;
+  
+}
+.todo-list .btn{
+  display: flex;
+  justify-content: space-between;
+}
+.btn button{
+  border: 1px solid #e1b382;
+  outline: none;
+  font-size: 1em;
+  padding: 0.5em;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: #000;
+  color: #e1b382;
+  cursor: pointer;
+}
+
+
+.btn.active {
+  background-color: #e1b382;
+  color: #000;
+  border: 2px solid #000;
+}
+
